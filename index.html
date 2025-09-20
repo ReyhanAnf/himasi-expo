@@ -339,6 +339,7 @@
                         if ((video.duration - video.currentTime) <= showContentAtSecond) {
                             endScreen.classList.add('visible');
                             videoContainer.classList.add('content-hidden');
+                            hasDone = true;
                         } else if (hasDone === false) {
                             endScreen.classList.remove('visible');
                             videoContainer.classList.remove('content-hidden');
